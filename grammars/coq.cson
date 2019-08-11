@@ -9,6 +9,27 @@
   },
   {
     'include': '#keyword'
+  },
+  {
+    'include': '#module-keyword'
+  },
+  {
+    'include': '#assumption-keyword'
+  },
+  {
+    'include': '#assertion-keyword'
+  },
+  {
+    'include': '#proof-keyword'
+  },
+  {
+    'include': '#definition-keyword'
+  },
+  {
+    'include': '#notation-keyword'
+  },
+  {
+    'include': '#query-keyword'
   }
 ]
 'repository':
@@ -34,3 +55,24 @@
   'keyword':
     'name': 'keyword.other.coq'
     'match': '\\b(as|at|cofix|else|end|exists|exists2|fix|for|forall|fun|if|IF|in|let|match|mod|Prop|return|Set|then|Type|using|where|with)\\b'
+  'module-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Module|Section|From|Require|Import|Export|End)\\b'
+  'assumption-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Axiom|Axioms|Conjecture|Parameter|Parameters|Variable|Variables|Hypothesis|Hypotheses)\\b'
+  'assertion-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Theorem|Lemma|Remark|Fact|Corollary|Proposition|Example)\\b'
+  'proof-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Proof|Qed|Defined|Admitted)\\b'
+  'definition-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Local|Global|Definition|Let|Program|Fixpoint|CoFixpoint|Existing|Class|Instance|Record|Inductive|CoInductive|Arguments)\\b'
+  'notation-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Notation|Infix|Reserved)\\b'
+  'query-keyword':
+    'name': 'keyword.other.coq'
+    'match': '\\b(Search|Check|Compute)\\b'

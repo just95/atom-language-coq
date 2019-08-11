@@ -63,7 +63,7 @@
     'match': '\\b(Axiom|Axioms|Conjecture|Parameter|Parameters|Variable|Variables|Hypothesis|Hypotheses)\\b'
   'assertion-keyword':
     'name': 'keyword.other.coq'
-    'match': '\\b(Theorem|Lemma|Remark|Fact|Corollary|Proposition|Example)\\b'
+    'match': '\\b(Fail|Theorem|Lemma|Remark|Fact|Corollary|Proposition|Example)\\b'
   'proof-keyword':
     'name': 'keyword.other.coq'
     'match': '\\b(Proof|Qed|Defined|Admitted)\\b'

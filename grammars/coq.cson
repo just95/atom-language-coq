@@ -30,6 +30,15 @@
   },
   {
     'include': '#query-keyword'
+  },
+  {
+    'include': '#type'
+  },
+  {
+    'include': '#number'
+  },
+  {
+    'include': '#string'
   }
 ]
 'repository':
@@ -54,7 +63,7 @@
     ]
   'keyword':
     'name': 'keyword.other.coq'
-    'match': '\\b(as|at|cofix|else|end|exists|exists2|fix|for|forall|fun|if|IF|in|let|match|mod|Prop|return|Set|then|Type|using|where|with)\\b'
+    'match': '\\b(as|at|cofix|else|end|exists|exists2|fix|for|forall|fun|if|IF|in|let|match|mod|return|then|using|where|with)\\b'
   'module-keyword':
     'name': 'keyword.other.coq'
     'match': '\\b(Module|Section|From|Require|Import|Export|End)\\b'
@@ -76,3 +85,12 @@
   'query-keyword':
     'name': 'keyword.other.coq'
     'match': '\\b(Search|Check|Compute)\\b'
+  'type':
+    'name': 'support.type.coq'
+    'match': '\\b(Prop|Set|Type)\\b'
+  'number':
+    'name': 'constant.numeric.decimal.coq'
+    'match': '\\b[0-9]+\\b'
+  'string':
+    'name': 'string.quoted.double.coq'
+    'match': '"([^"]*)"'
